@@ -22,7 +22,7 @@ public class StreamOfIntegers {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter number:");
         int n=sc.nextInt();
-        int sum=0;
+        int sum=0; 
         do{
             sum+=n;
             n=sc.nextInt();
