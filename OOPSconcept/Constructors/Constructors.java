@@ -2,7 +2,6 @@ package OOPSconcept.Constructors;
 class Algebra{
     int a;
     int b;
-
     // Algebra(){//default constructor
     //     System.out.println("Constructor called");
     // }
@@ -21,21 +20,24 @@ class Algebra{
     int mul(){
         return a*b;
     }
-
 }
-
 public class Constructors {
     public static void main(String[] args) {
         Algebra obj=new Algebra(5,7);
-        // Scanner sc=new Scanner(System.in);
-        // int x=sc.nextInt();
-        // int y=sc.nextInt();
         int ans1=obj.sum();
         System.out.println(ans1);
-        int ans2=obj.sum();
+        int ans2=obj.sub();
         System.out.println(ans2);
-        int ans3=obj.sum();
+        int ans3=obj.mul();
         System.out.println(ans3);
+
+        Algebra obj2=new Algebra(2,2);
+        int ans11=obj2.sum();
+        System.out.println(ans11);
+        int ans21=obj2.sub();
+        System.out.println(ans21);
+        int ans31=obj2.mul();
+        System.out.println(ans31);
 
     }
 }
