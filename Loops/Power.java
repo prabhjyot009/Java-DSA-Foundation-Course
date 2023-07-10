@@ -15,6 +15,6 @@ public class Power {
             power*=a;
             i++;
         }
-        System.out.println(power);
+        System.out.println(power); 
     }
 }
