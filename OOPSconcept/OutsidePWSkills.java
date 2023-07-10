@@ -19,4 +19,4 @@ class AccessModifiers3 extends AccessModifiers{ //child class of AccessModfiers 
         AccessModifiers3 obj3=new AccessModifiers3();
         System.out.println("Child Class "+obj3.str_1);
     }
-}
+} 
