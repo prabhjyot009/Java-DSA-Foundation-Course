@@ -15,8 +15,9 @@ public class InputInArray {
             arr[i]=sc.nextInt();
         }
         //print inputed array
+        System.out.print("Elements are:");
         for(int i=0;i<arr.length;i++){
-            System.out.print("Elements are"+arr[i]+" ");
+            System.out.print(arr[i]+" ");
         }
     }
 }
