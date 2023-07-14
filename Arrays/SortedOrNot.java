@@ -7,21 +7,37 @@ public class SortedOrNot {
     }
     System.out.println();
     }
-    static void GreaterOccurrencesArr(int[] arr){
-        int count=0;
-        int target=5;
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]>target){
-                count+=1;
+    static boolean isSorted(int[] arr){
+        boolean check=true;
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i]>arr[i-1]){
+                check=false;
+                break;
             }
         }
-        System.out.println(count);
+        System.out.println(check);
+        return check;
     }
+    static void sortedArray(int[] arr){
+        int temp=0;
+        for (int i = 0; i < arr.length-1; i++) {
+            for (int j = 0; j < arr.length-i-1; j++) {
+                if(arr[j]>arr[j+1]){
+                    temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        for(int i=0;i<arr.length;i++){
+    System.out.print(arr[i]+" ");
+    }
+}
     public static void main(String[] args) {
         int[] arr={5,1,8,5,9,8,0};
         System.out.println("Orignal Array:");
         printArray(arr);
-        System.out.println("Greater occurences are:");
-        GreaterOccurrencesArr(arr);
+        isSorted(arr);
+        sortedArray(arr);
     }
 }
