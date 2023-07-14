@@ -8,17 +8,17 @@ public class SortedOrNot {
         System.out.println();
     }
 
-    static boolean isSorted(int[] arr) {
-        boolean check = true;
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > arr[i - 1]) {
-                check = false;
-                break;
-            }
-        }
-        System.out.println(check);
-        return check;
-    }
+    // static boolean isSorted(int[] arr) {
+    //     boolean check = true;
+    //     for (int i = 1; i < arr.length; i++) {
+    //         if (arr[i] > arr[i - 1]) {
+    //             check = false;
+    //             break;
+    //         }
+    //     }
+    //     System.out.println(check);
+    //     return check;
+    // }
 
     static void sortedArray(int[] arr) {
         int temp = 0;
@@ -31,16 +31,14 @@ public class SortedOrNot {
                 }
             }
         }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        printArray(arr);
     }
 
     public static void main(String[] args) {
         int[] arr = { 5, 1, 8, 5, 9, 8, 0 };
         System.out.println("Orignal Array:");
         printArray(arr);
-        isSorted(arr);
+        // isSorted(arr);
         System.out.println("Sorted Array:");
         sortedArray(arr);
     }
