@@ -29,7 +29,7 @@ public class KthSmallestAndLargestArray {
     static int[] SmallestLargestArrayUsingFunction(int[] arr){
         Arrays.sort(arr);
         int[] ans={arr[0],arr[arr.length-1]};
-        System.out.println(arr[1]+" "+arr[arr.length-2]);
+        System.out.println(arr[2]+" "+arr[arr.length-3]);
         return ans;
     }
 
