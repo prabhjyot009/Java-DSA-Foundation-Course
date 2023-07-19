@@ -7,7 +7,7 @@ public class SecondLargestArray {
         }
         System.out.println();
     }
-    static void secondLargest(int[] arr){
+    static int findMax(int[] arr){
         int max=Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length-1; j++) {
@@ -16,11 +16,23 @@ public class SecondLargestArray {
                 }
             }
         }
-        System.out.println(max);
+        return max;
+    }
+    static int findSecondMax(int[] arr){
+        int max=findMax(arr);
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]==max){
+                arr[i]=Integer.MIN_VALUE;
+            }
+        }
+        int secondMax=findMax(arr);
+        System.out.println(secondMax);
+        return secondMax;
     }
     public static void main(String[] args) {
         int[] arr={8,3,5,9,2,0};
         printArray(arr);
-        secondLargest(arr);
+        findMax(arr);
+        findSecondMax(arr);
     }
 }
