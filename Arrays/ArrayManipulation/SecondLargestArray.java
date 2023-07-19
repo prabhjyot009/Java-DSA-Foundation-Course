@@ -8,12 +8,11 @@ public class SecondLargestArray {
         System.out.println();
     }
     static void secondLargest(int[] arr){
-        int max=0;
+        int max=Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length-1; j++) {
                 if (arr[j]>max) {
                     max=arr[j];
-                    
                 }
             }
         }
