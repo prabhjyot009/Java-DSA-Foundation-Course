@@ -24,7 +24,7 @@ public class KthSmallestAndLargestArray {
         System.out.println("Sorted Array:");
         printArray(arr);
         System.out.println("Kth Smallest and Largest values using logic are:");
-        System.out.println(arr[1]+" "+arr[arr.length-2]);
+        System.out.println(arr[2]+" "+arr[arr.length-3]);
     }
     static int[] SmallestLargestArrayUsingFunction(int[] arr){
         Arrays.sort(arr);
