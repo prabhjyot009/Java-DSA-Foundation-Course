@@ -1,6 +1,6 @@
 package Arrays;
 
-public class SwappingArray {
+public class BasicSwappingArray {
     static void printArray(int[] arr){
 
     }
