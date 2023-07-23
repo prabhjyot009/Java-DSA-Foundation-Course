@@ -1,6 +1,11 @@
 package Arrays;
 //no need of making new array
 public class InplaceReverseArray {
+    public static void main(String[] args) {
+        int[] arr={1,2,3,4,5};
+        printArray(arr);
+        inplaceReverse(arr);
+    }
     static void printArray(int[] arr){
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+" ");
@@ -22,9 +27,5 @@ public class InplaceReverseArray {
         arr[i]=arr[j];
         arr[j]=temp;
     }
-    public static void main(String[] args) {
-        int[] arr={1,2,3,4,5};
-        printArray(arr);
-        inplaceReverse(arr);
-    }
+
 }
