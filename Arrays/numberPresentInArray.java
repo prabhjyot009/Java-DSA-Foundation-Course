@@ -9,7 +9,7 @@ public class numberPresentInArray {
         for (int i = 0; i < arr.length; i++) {
             freq[arr[i]]++;
         }
-        return 
+        return freq;
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -27,6 +27,14 @@ public class numberPresentInArray {
 
         while (q>0) {
             System.out.println("ENter number to be searched");
+            int x=sc.nextInt();
+            if(freq[x]>0){
+                System.out.println("Yes");
+            }
+            else{
+                System.out.println("No");
+            }
+            q--;
         }
     }
 }
