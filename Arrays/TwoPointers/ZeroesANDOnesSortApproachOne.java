@@ -3,7 +3,7 @@ package Arrays.TwoPointers;
 
 import java.util.Scanner;
 
-public class ZeroesANDOnesSort {
+public class ZeroesANDOnesSortApproachOne {
 
     static void printArray(int arr[]){
         for (int i = 0; i < arr.length; i++) {
