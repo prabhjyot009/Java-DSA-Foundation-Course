@@ -15,11 +15,13 @@ public class ZeroesANDOnesSort {
     static void swapZeroesAndOnes(int[] arr){
         int n=arr.length;
         int zeroes=0;
+        //count number of zeroes 
         for (int i = 0; i < n; i++) {
             if(arr[i]==0){
                 zeroes++;
             }
         }
+        //o to zeroes-1 : 0, zeroes to n-1 : 1
         for (int i = 0; i < n; i++) {
             if(i<zeroes){
                 arr[i]=0;
