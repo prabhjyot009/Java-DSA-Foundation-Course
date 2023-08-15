@@ -9,21 +9,28 @@ public class BasicPrefixSum {
         System.out.println();
     }
 
-    static int[] maxPrefixSum(int[] arr){
+    // static int[] maxPrefixSum(int[] arr){
+    //     int n=arr.length;
+    //     int[] prefix=new int[n];
+    //     prefix[0]=arr[0];
+    //     for (int i = 1; i < n; i++) {
+    //         prefix[i]=prefix[i-1]+arr[i];
+    //     }
+    //     return prefix;
+    // }
+    //approach inplace
+    static void maxPrefixSum(int[] arr){
         int n=arr.length;
-        int[] prefix=new int[n];
-        prefix[0]=arr[0];
         for (int i = 1; i < n; i++) {
-            prefix[i]=prefix[i-1]+arr[i];
+            arr[i]+=arr[i-1];
         }
-        return prefix;
     }
     public static void main(String[] args) {
         int[] arr={2,1,3,4,5};
         System.out.println("Orignal array:");
         printArray(arr);
-        int[] prefix=maxPrefixSum(arr);
+        maxPrefixSum(arr);
         System.out.println("Max Prefix sum");
-        printArray(prefix);
+        printArray(arr);
     }
 }
