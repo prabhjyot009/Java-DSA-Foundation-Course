@@ -12,19 +12,21 @@ public class Multiplication {
         }
     }
 
-    static void sumArray(int[][] a, int r1, int c1, int[][] b, int r2, int c2) {
-        if (r1 != r2 && c1 != c2) {
+    static void mulArray(int[][] a, int r1, int c1, int[][] b, int r2, int c2) {
+        if (c1!=r2) {
             System.out.println("Wrong input - Addition not possible");
             return;
         }
-        int[][] sum = new int[r1][c1];
+        int[][] mul = new int[r1][c2];
         for (int i = 0; i < r1; i++) {// rows
-            for (int j = 0; j < c1; j++) {// colos
-                sum[i][j] = a[i][j] + b[i][j];
+            for (int j = 0; j < c2; j++) {// colos
+                for (int k = 0; k < c2; k++) {
+                    mul[i][j] += (a[i][k]*b[i][k]);
+                }
             }
         }
-        System.out.println("Sum of Matrix A and Matrix B");
-        printArray(sum);
+        System.out.println("Multiplication of Matrix A and Matrix B");
+        printArray(mul);
     }
 
     public static void main(String[] args) {
@@ -59,6 +61,6 @@ public class Multiplication {
         printArray(a);
         System.out.println("Matrix B:");
         printArray(b);
-        sumArray(a, r1, c1, b, r2, c2);
+        mulArray(a, r1, c1, b, r2, c2);
     }
 }
