@@ -11,10 +11,13 @@ public class Addition {
             System.out.println();
         }
     }
-    static void sumArray(int[][] arr){
-        int sum=0;
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
+    static void sumArray(int[][] a,int r1,int c1,int[][] b,int r2,int c2){
+        if(r1!=r2 && c1!=c2){
+            System.out.println("Wrong input - Addition not possible");
+        }
+        int[][] sum=new int[r1][c1]
+        for (int i = 0; i < r1; i++) {//rows
+            for (int j = 0; j < c1; j++) {//colos
                 sum[i][j]=s
             }
         }
@@ -49,7 +52,7 @@ public class Addition {
         }
         System.out.println("Matrix A:");
         printArray(a);
-        System.out.println("Matrix A:");
+        System.out.println("Matrix B:");
         printArray(b);
         
     }
