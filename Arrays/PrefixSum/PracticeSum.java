@@ -34,6 +34,7 @@ public class PracticeSum {
         }
 
         System.out.println("Orignal Array:");
-        printArray(arr);
+        partitionSum(arr);
+        System.out.println("Partition of Equal sum array is "+partitionSum(arr));
     }
 }
