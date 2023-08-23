@@ -21,6 +21,7 @@ public class Multiplication {
         for (int i = 0; i < r1; i++) {// rows
             for (int j = 0; j < c2; j++) {// colos
                 for (int k = 0; k < c2; k++) {
+                    
                     mul[i][j] += (a[i][k]*b[i][k]);
                 }
             }
