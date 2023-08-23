@@ -21,6 +21,7 @@ public class BubbleSort {
     //     arr[i]=arr[j];
     //     arr[j]=temp;
     // }
+    
     public static void main(String[] args) {
         int[] arr={3,7,9,2,5};
         bubble(arr);
