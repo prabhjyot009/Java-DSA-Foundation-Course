@@ -2,7 +2,7 @@ package Arrays;
 import java.io.*;
 public class MajorityElement {
 
-    static void majorityElement(int[] arr,int n){
+    static int majorityElement(int[] arr,int n){
         int max_freq=0;
         int index=-1;
         for (int i = 0; i < n; i++) {
@@ -18,16 +18,15 @@ public class MajorityElement {
             }
         }
         if(max_freq>n/2){
-            System.out.println(arr[index]);
+            System.out.println(arr[index]+" "+max_freq);
         }
         else{
-            System.out.println("Eroror");
+            System.out.println("No Majority Element");
         }
-        
-            
+        return index;
     }
         public static void main(String[] args) {
-        int[] arr={5,6,3,3,1,1,2,89,1,1,0,3};
+        int[] arr={89,9,9,9,9,1,1};
         int n=arr.length;
         majorityElement(arr,n);
     }
