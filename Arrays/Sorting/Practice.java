@@ -7,24 +7,19 @@ public class Practice {
         }
         System.out.println();
     }
-    static int majorityElement(int[] arr){
-        // int freq=0;
-        // int element=0;
-        // for (int i = 0; i < arr.length; i++) {
-        //     int count=0;
-        //     for (int j = 0; j < arr.length; j++) {
-        //         if(arr[i]==arr[j]){
-        //             count++;
-        //         }
-        //     }
-        //     if(count>freq){
-        //         freq=count;
-        //         element=arr[i];
-        //     }
-        // }
-        // System.out.println("Element is "+element);
-        // System.out.println("Frequency is "+freq);
-        // return element;
+    static void majorityElement(int[] arr){
+        int freq=0;
+        for (int i = 0; i < arr.length; i++) {
+            int max=0;
+            if(arr[i]>max){
+                max=arr[i];
+            }
+            if(arr[i]==max){
+                freq+=1;
+            }
+        }
+        System.out.println(max);
+        System.out.println(freq);
     }
     public static void main(String[] args) {
         int[] arr={1,2,3,3,4,3};
