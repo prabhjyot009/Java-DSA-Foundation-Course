@@ -1,34 +1,36 @@
 package Arrays;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class MajorityElement {
-
-    static void majorityElement(int[] arr, int n) {
-        int max_freq = 0;
-        int index = 0;
-        for (int i = 0; i < n; i++) {
-            int count = 0;
-            for (int j = i; j < n; j++) {
-                if (arr[i] == arr[j]) {
-                    count += 1;
-                }
-            }
-            if (count > max_freq) {
-                max_freq = count;
-                index = i;
+    public static int majorityElement1(int[] nums) {
+        int n = nums.length;
+        int majority = n/2;
+        int[] count = new int[100];
+        for(int num : nums){
+            count[num]++;
+            if(count[num] > majority){
+                return num;
             }
         }
-        if (max_freq > n / 2) {
-            System.out.println(arr[index] + " " + max_freq);
-        } else {
-            System.out.println("No Majority Element");
-        }
+        return -1;
     }
 
-    public static void main(String[] args) {
-        int[] arr = { 1,2,1};
-        int n = arr.length;
-        majorityElement(arr, n);
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        
+        while(t-- > 0)
+        {
+            int n =sc.nextInt();
+            int arr[] = new int[n];
+            
+            for(int i = 0; i < n; i++)
+             arr[i] = sc.nextInt();
+             
+           System.out.println(new MajorityElement().majorityElement1(arr)); 
+        }
     }
 }
