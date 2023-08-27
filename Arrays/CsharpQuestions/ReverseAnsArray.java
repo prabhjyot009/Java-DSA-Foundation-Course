@@ -1,3 +1,5 @@
+package Arrays.CsharpQuestions;
+
 public class ReverseAnsArray{
 
     static void printArray(int[] arr){
