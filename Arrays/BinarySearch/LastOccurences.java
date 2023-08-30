@@ -26,3 +26,4 @@ public class LastOccurences {
         System.out.println(lastoccur(arr, x));
     }
 }
+
