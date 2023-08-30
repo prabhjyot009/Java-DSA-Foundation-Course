@@ -49,3 +49,4 @@ public class FirstAndLastOccurence {
         System.out.println(find(arr, n, x));
     }
 }
+
