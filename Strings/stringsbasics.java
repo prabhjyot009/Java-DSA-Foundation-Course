@@ -51,27 +51,42 @@ public class stringsbasics {
         // //or:
         // System.out.println(s1.concat(s2));
         
-        //new concept:
-        String str="abc";
-        str=str+"def"+10+'r'; //'r' character will convert to string and then integer 10 will convert to string
-        System.out.println(str);
+        // //new concept:
+        // String str="abc";
+        // str=str+"def"+10+'r'; //'r' character will convert to string and then integer 10 will convert to string
+        // System.out.println(str);
 
-        //second concept:
-        System.out.println("abc"+10+20);
-        System.out.println("abc"+(10+20));
-        System.out.println(10+20+"abc");
+        // //second concept:
+        // System.out.println("abc"+10+20);
+        // System.out.println("abc"+(10+20));
+        // System.out.println(10+20+"abc");
 
-        //Interning Concept: This concept is used to store strings in string pool. and it is used to save memory.
+        // //Interning Concept: This concept is used to store strings in string pool. and it is used to save memory.
+        // String s1="Hello";
+        // String s2="Hello";
+        // System.out.println(s1==s2); //it will give true because both strings are same and it will store in string pool.
+
+        // //we can avoid interning using new keyword.
+
+        // String s3=new String("Hello");
+        // String s4=new String("Hello");
+
+        // System.out.println(s3==s4); //it will give false because both strings are different and it will not store in string pool.
+        // System.out.println(s1==s3); //it will give false because both strings are different and it will not store in string pool.
+        // System.out.println(s1.equals(s3)); //it will give true because both strings are same and it will not store in string pool.
+        // System.out.println(s1.equals(s2)); //it will give true because both strings are same and it will not store in string pool.
+        // System.out.println(s3.equals(s4)); //it will give true because both strings are same and it will not store in string pool.
+
+        //str.equals() and == difference:
+        //in string we have to use str.equals() inplace of ==
         String s1="Hello";
         String s2="Hello";
-        System.out.println(s1==s2); //it will give true because both strings are same and it will store in string pool.
         String s3=new String("Hello");
-        String s4=new String("Hello");
-        System.out.println(s3==s4); //it will give false because both strings are different and it will not store in string pool.
-        System.out.println(s1==s3); //it will give false because both strings are different and it will not store in string pool.
-        System.out.println(s1.equals(s3)); //it will give true because both strings are same and it will not store in string pool.
-        System.out.println(s1.equals(s2)); //it will give true because both strings are same and it will not store in string pool.
-        System.out.println(s3.equals(s4)); //it will give true because both strings are same and it will not store in string pool.
+        System.out.println(s1==s2); // == operator will only see the address of the string if address are same then it will give true
+        System.out.println(s1==s3); // false because addresses are not same.
+
+        //.equals(): it will check whole string except for address
+        System.out.println(s1.equals(s3));
 
     }    
 }
