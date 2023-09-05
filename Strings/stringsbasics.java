@@ -61,5 +61,17 @@ public class stringsbasics {
         System.out.println("abc"+(10+20));
         System.out.println(10+20+"abc");
 
+        //Interning Concept: This concept is used to store strings in string pool. and it is used to save memory.
+        String s1="Hello";
+        String s2="Hello";
+        System.out.println(s1==s2); //it will give true because both strings are same and it will store in string pool.
+        String s3=new String("Hello");
+        String s4=new String("Hello");
+        System.out.println(s3==s4); //it will give false because both strings are different and it will not store in string pool.
+        System.out.println(s1==s3); //it will give false because both strings are different and it will not store in string pool.
+        System.out.println(s1.equals(s3)); //it will give true because both strings are same and it will not store in string pool.
+        System.out.println(s1.equals(s2)); //it will give true because both strings are same and it will not store in string pool.
+        System.out.println(s3.equals(s4)); //it will give true because both strings are same and it will not store in string pool.
+
     }    
 }
