@@ -23,7 +23,7 @@ public class SubStrings {
         String s="abcd"; //0-3  
         for (int i = 0; i < 4; i++) {
             for (int j = i+1; j < 5; j++) {
-                System.out.print(s.substring(i,j)+" ");
+                System.out.print(s.substring(i,j)+" "); 
             }
         }
         
