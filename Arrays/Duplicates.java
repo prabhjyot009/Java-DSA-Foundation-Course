@@ -9,7 +9,7 @@ public class Duplicates {
         for (int i = 0; i < nums.length; i++) {
             if (list.contains(nums[i])) {
                 System.out.print(nums[i] + " ");
-            } else {
+            } else {                                                
                 list.add(nums[i]);
             }
         }
