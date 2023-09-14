@@ -2,7 +2,7 @@ package Arrays.PrefixSum;
 
 public class MaximumProductSubArray {
     public static void main(String[] args) {
-        int[] arr = {2, 3, -2, 4};
+        int[] arr = { 2, 3, -2, 4 };
         System.out.println(maxProduct(arr));
     }
 
