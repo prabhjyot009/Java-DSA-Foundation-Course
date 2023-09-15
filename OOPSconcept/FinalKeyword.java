@@ -10,7 +10,7 @@ public class FinalKeyword {
         obj.name="Raghav";
         obj.rno=21;
         obj.percent=34;
-        obj.schoolName="DPS";
+        // obj.schoolName="DPS";
         System.out.println(obj.schoolName);
     }
 }
