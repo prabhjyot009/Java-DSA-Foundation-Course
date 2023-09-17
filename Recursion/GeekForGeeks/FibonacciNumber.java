@@ -1,7 +1,6 @@
 package GeekForGeeks;
 
 public class FibonacciNumber {
-    //Function to return list containing first n fibonacci numbers the first two terms of the series are 1 and 1.
     public static long[] printFibb(int n) {
         //code here
         long[] arr=new long[n];
