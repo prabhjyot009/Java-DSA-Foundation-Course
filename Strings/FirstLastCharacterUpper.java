@@ -14,7 +14,7 @@ public class FirstLastCharacterUpper {
             }
             else{
                 cap.append(w.toUpperCase()).append(" ");
-            }
+            } 
         }
         System.out.println(cap);
     }
