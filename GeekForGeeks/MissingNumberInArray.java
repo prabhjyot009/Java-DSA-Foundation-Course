@@ -1,4 +1,4 @@
-package Arrays.GeekForGeeks;
+package GeekForGeeks;
 
 public class MissingNumberInArray {
     static int MissingNumber(int array[], int n) {

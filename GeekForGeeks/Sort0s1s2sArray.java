@@ -1,4 +1,4 @@
-package Arrays.GeekForGeeks;
+package GeekForGeeks;
 
 public class Sort0s1s2sArray {
     public static void main(String[] args) {

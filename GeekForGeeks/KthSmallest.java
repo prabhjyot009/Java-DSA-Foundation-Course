@@ -1,4 +1,4 @@
-package Arrays.GeekForGeeks;
+package GeekForGeeks;
 
 public class KthSmallest {
     public static int KthSmallestElement(int[] arr){
