@@ -25,12 +25,12 @@ public class Duplicates {
         //         System.out.print(i+" ");
         //     }
         // }
-        for(int i=0;i<arr.length;i++){ //marking the visited elements as negative 
-            int idx=Math.abs(arr[i]); //taking the absolute value of the element as index because the element can be negative also like -1
-            if(arr[idx]<0){//if the element is already negative then it is a duplicate
-                System.out.print(idx+" ");//printing the duplicate element
-            }else{//if the element is not negative then marking it as negative
-                arr[idx]=-arr[idx];//marking the element as negative for example if the element is 1 then arr[1]=-1 and if the element is 2 then arr[2]=-2 and so on 
+        for(int i=0;i<arr.length;i++){ 
+            int idx=Math.abs(arr[i]);
+            if(arr[idx]<0){
+                System.out.print(idx+" ");
+            }else{
+                arr[idx]=-arr[idx];
             }
         }
     }
