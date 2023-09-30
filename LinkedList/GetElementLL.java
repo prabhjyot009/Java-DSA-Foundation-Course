@@ -15,7 +15,7 @@ public class GetElementLL {
     public static class linkedlist {
         Node head = null;
         Node tail = null;
-
+        int size=0;
         void insertAtEnd(int val) {
             Node temp = new Node(val);
             if (head == null) {
@@ -24,6 +24,7 @@ public class GetElementLL {
                 tail.next = temp;
             }
             tail = temp;
+            size++;
         }
 
         void insertAtHead(int val) {
@@ -33,11 +34,12 @@ public class GetElementLL {
             }
             temp.next = head;
             head = temp;
+            size++;
         }
         void insertAt(int idx,int val){
             Node t=new Node(val);
             Node temp=head;
-            if(idx==size()){
+            if(idx==size){
                 insertAtEnd(val);
                 return;
             }
@@ -45,7 +47,7 @@ public class GetElementLL {
                 insertAtHead(val);
                 return;
             }
-            else if(idx>size() || idx<0){
+            else if(idx>size || idx<0){
                 System.out.println("Wrong index");
                 return;
             }
@@ -54,9 +56,10 @@ public class GetElementLL {
             }
             t.next=temp.next;
             temp.next=t;
+            size++;
         }
         int getElement(int idx){
-            if(idx<0 || idx>size()){
+            if(idx<0 || idx>size){
                 System.out.println("Wrong index");
                 return -1;
             }
@@ -74,16 +77,17 @@ public class GetElementLL {
             }
             System.out.println();
         }
-        int size(){
-            Node temp=head;
-            int count=0;
-            while(temp!=null){
-                count++;
-                temp=temp.next;
-            }
-            return count;
-        }
+        // int size(){ O(n)
+        //     Node temp=head;
+        //     int count=0;
+        //     while(temp!=null){
+        //         count++;
+        //         temp=temp.next;
+        //     }
+        //     return count;
+        // }
     }
+
 
     public static void main(String[] args) {
         linkedlist ll = new linkedlist();
@@ -93,7 +97,7 @@ public class GetElementLL {
         ll.insertAtHead(0);
         ll.insertAt(0, -1);
         ll.display();
-        System.out.println(ll.size());
+        System.out.println(ll.size); //we will remove size function because it is an attribute.
         System.out.println(ll.getElement(0));
 
     }
