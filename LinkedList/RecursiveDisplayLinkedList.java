@@ -3,20 +3,11 @@ package LinkedList;
 public class RecursiveDisplayLinkedList {
     static void displayrecursive(Node head){
         if(head==null) return;
+        displayrecursive(head.next); //for reverse linked list
             System.out.print(head.data+" ");
-            display(head.next);
+            // displayrecursive(head.next);
     }
-    public static void display(Node head){
-        while(head!=null){
-            System.out.print(head.data+" ");
-            head=head.next;
-        }
-        // while(head!=null){//it will not repeat because head reach to null
-        //     System.out.print(head.data+" ");
-        //     head=head.next;
-        // }
 
-    }
     public static class Node{
         int data;
         Node next;
@@ -35,10 +26,10 @@ public class RecursiveDisplayLinkedList {
         b.next=c;
         c.next=d;
         d.next=e;
-        display(a);
+        // display(a);
         // System.out.println();
         // display(a);
-        System.out.println();
+        // System.out.println(); 
         displayrecursive(a);
     }
 }
