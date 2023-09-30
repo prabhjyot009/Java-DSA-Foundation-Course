@@ -38,6 +38,18 @@ public class InsertMethodLL {
         void insertAt(int idx,int val){
             Node t=new Node(val);
             Node temp=head;
+            if(idx==size()){
+                insertAtEnd(val);
+                return;
+            }
+            else if(idx==0){
+                insertAtHead(val);
+                return;
+            }
+            else if(idx<0 ||idx>size()){
+                System.out.println("wrong index");
+                return;
+            }
             for (int i = 1; i <=idx-1; i++) { //means it will run till given idx -1
                 temp=temp.next;
             }
@@ -52,6 +64,15 @@ public class InsertMethodLL {
             }
             System.out.println();
         }
+        int size(){
+            Node temp=head;
+            int count=0;
+            while(temp!=null){
+                count++;
+                temp=temp.next;
+            }
+            return count;
+        }
     }
 
     public static void main(String[] args) {
@@ -61,6 +82,9 @@ public class InsertMethodLL {
         ll.insertAtEnd(2);
         ll.insertAtHead(-1);
         ll.insertAt(2,12);
+        ll.insertAt(0, 100); //did not work because
         ll.display();
+        System.out.println(ll.size());
+        // System.out.println(ll.tail.data);
     }
 }
