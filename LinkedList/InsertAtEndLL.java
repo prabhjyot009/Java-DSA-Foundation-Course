@@ -15,7 +15,7 @@ public class InsertAtEndLL {
         while(t.next!=null){//t.next jab null hogya iska matlab voh tail hai
             t=t.next;
         }
-        t.next=temp;
+        t.next=temp; 
     }
     public static void display(Node head){  
         while(head!=null){
