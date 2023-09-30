@@ -15,7 +15,7 @@ public class implementationLL {
         void insertAtEnd(int val){
             Node temp=new Node(val);
             if(head==null){//empty list
-                head=temp;
+                head=temp; 
             }
             else{
                 tail.next=temp;  //head
