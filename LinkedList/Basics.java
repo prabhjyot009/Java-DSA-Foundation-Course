@@ -37,5 +37,8 @@ public class Basics {
         b.next = c;// 5 -> 3 -> 9 8 16
         c.next = d;// 5 -> 3 -> 9 -> 8 16
         d.next = e;// 5 -> 3 -> 9-> 8-> 16 
+
+        System.out.println(a.data);
+        System.out.println(a.next.data);
     }
 }
