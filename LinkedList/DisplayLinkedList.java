@@ -15,7 +15,7 @@ public class DisplayLinkedList {
         Node d=new Node(8);
         Node e=new Node(16);
 
-        a.next=b;
+        a.next=b; 
         b.next=c;
         c.next=d;
         d.next=e;
