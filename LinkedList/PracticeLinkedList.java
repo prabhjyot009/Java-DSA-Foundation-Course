@@ -102,6 +102,7 @@ public class PracticeLinkedList {
         ll.insertAtEnd(4);
         ll.insertAtHead(0);
         ll.insertAt(2,23);
+        ll.deleteAt(3);
         ll.display();
         System.out.println(ll.size);
         System.out.println(ll.getAt(2));
