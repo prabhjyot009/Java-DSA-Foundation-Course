@@ -57,7 +57,34 @@ public class PracticeLinkedList {
             t.next=temp.next;
             temp.next=t;
             size++;
-        }  
+        }
+        void deleteAt(int idx){
+            Node temp=head;
+            if(idx==0){
+                head=head.next;
+                size--;
+                return;
+            }
+            for (int i = 0; i <=idx-1; i++) {
+                temp=temp.next;
+            }
+            temp.next=temp.next.next;
+            tail=temp;//if last index being removed then tail will point to temp 
+                      //beacuse tail will be the last removed index and when it will 
+                      //remove 4th index will direct to null (tail is still last index value).
+            size--;
+        }
+        int getAt(int idx){
+            Node temp=head;
+            if(idx<0 || idx>size){
+                System.out.println("Wrong input");
+                return -1;                
+            }
+            for (int i = 1; i <= idx; i++) {
+                temp=temp.next;
+            }            
+            return temp.data;
+        }
         void display(){
             Node temp=head;
             while(temp!=null){
@@ -77,6 +104,7 @@ public class PracticeLinkedList {
         ll.insertAt(2,23);
         ll.display();
         System.out.println(ll.size);
+        System.out.println(ll.getAt(2));
 
     }
 }
