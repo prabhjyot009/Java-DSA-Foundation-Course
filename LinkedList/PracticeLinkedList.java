@@ -37,26 +37,15 @@ public class PracticeLinkedList {
             size++;
         }
         void insertAt(int idx,int val){
-            Node temp=head;
             Node t=new Node(val);
-            if(idx==0){
-                insertAtHead(val);
-                return;
-            }
-            else if(idx==size){
-                insertAtEnd(val);
-                return;
-            }
-            else if(idx<0 || idx>size){
-                System.out.println("Wrong index");
-                return;
-            }
-            for (int i = 1; i <=idx-1; i++) {
+            Node temp=head;
+            
+            for (int i = 1; i <= idx-1; i++) {
                 temp=temp.next;
-            }
-            t=temp.next;
-            t.next=t
-        }
+            }     
+            t.next=temp.next;
+            temp.next=t;
+        }  
         void display(){
             Node temp=head;
             while(temp!=null){
