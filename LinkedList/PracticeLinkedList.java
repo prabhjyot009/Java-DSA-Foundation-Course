@@ -39,12 +39,24 @@ public class PracticeLinkedList {
         void insertAt(int idx,int val){
             Node t=new Node(val);
             Node temp=head;
-            
+            if(idx==0){
+                insertAtHead(val);
+                return;                
+            }
+            else if(idx==size){
+                insertAtEnd(val);
+                return;
+            }
+            else if(idx<0 || idx>size){
+                System.out.println("Wrong input");
+                return;                
+            }
             for (int i = 1; i <= idx-1; i++) {
                 temp=temp.next;
             }     
             t.next=temp.next;
             temp.next=t;
+            size++;
         }  
         void display(){
             Node temp=head;
@@ -62,6 +74,7 @@ public class PracticeLinkedList {
         ll.insertAtEnd(3);
         ll.insertAtEnd(4);
         ll.insertAtHead(0);
+        ll.insertAt(2,23);
         ll.display();
         System.out.println(ll.size);
 
