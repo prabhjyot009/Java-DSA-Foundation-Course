@@ -9,7 +9,7 @@ public class LengthLL {
         }
     }
     public static int length(Node head){
-        int count=0;
+        int count=0; 
         while(head!=null){
             count++;
             head=head.next; 
