@@ -2,7 +2,7 @@ package GeekForGeeks.School;
 
 public class armstrong {
     public static void main(String[] args) {
-        int num1 = 163;
+        int num1 = 273;
         int temp=num1;
         int count=0;
         int arm=0;
