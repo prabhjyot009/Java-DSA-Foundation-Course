@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "arr",
+      "request": "launch",
+      "mainClass": "Loops.arr",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "Permutations",
       "request": "launch",
       "mainClass": "CP.Permutations",
