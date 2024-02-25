@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PartitionSubarrays",
+      "request": "launch",
+      "mainClass": "Arrays.PrefixSum.PartitionSubarrays",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "DigitsInNum",
       "request": "launch",
       "mainClass": "StriverDSA.DigitsInNum",
