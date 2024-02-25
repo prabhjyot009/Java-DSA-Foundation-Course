@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DigitsInNum",
+      "request": "launch",
+      "mainClass": "StriverDSA.DigitsInNum",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "passbyrefandval",
       "request": "launch",
       "mainClass": "StriverDSA.passbyrefandval",
