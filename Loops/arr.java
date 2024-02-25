@@ -6,12 +6,10 @@ public class arr {
         int square1=0;
         int square2=0;
         int sum=0;
-        for(int i=0;i<2;i++){
             square1=arr[0]*arr[0];
             square2=arr[1]*arr[1];
             sum=square1+square2;
-        }                  
-                String s1="abc";
+        String s1="abc";
         String s2="def";
         String s3=s1.concat(s2);
         System.out.println(s3);
