@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "stackbasics",
+      "request": "launch",
+      "mainClass": "stacks.stackbasics",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "stackbasics",
+      "request": "launch",
+      "mainClass": "Stacks.stackbasics",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "stack",
+      "request": "launch",
+      "mainClass": "StriverDSA.stack",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "Basics",
+      "request": "launch",
+      "mainClass": "StriverDSA.Basics",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "Basics",
+      "request": "launch",
+      "mainClass": "Stacks.Basics",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "Basics",
+      "request": "launch",
+      "mainClass": "Stack.Basics",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "dailyTemp",
+      "request": "launch",
+      "mainClass": "Leetcode.dailyTemp",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "reverseNum",
       "request": "launch",
       "mainClass": "StriverDSA.reverseNum",
