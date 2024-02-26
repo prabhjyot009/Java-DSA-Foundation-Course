@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "InsertAtBottom",
+      "request": "launch",
+      "mainClass": "stacks.InsertAtBottom",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "CopyStack",
       "request": "launch",
       "mainClass": "stacks.CopyStack",
