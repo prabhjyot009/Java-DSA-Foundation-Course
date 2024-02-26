@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PushAtBottom",
+      "request": "launch",
+      "mainClass": "stacks.PushAtBottom",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "RecursiveDisplay",
+      "request": "launch",
+      "mainClass": "stacks.RecursiveDisplay",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "displayStack",
       "request": "launch",
       "mainClass": "stacks.displayStack",
