@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CopyStack",
+      "request": "launch",
+      "mainClass": "stacks.CopyStack",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "stackbasics",
       "request": "launch",
       "mainClass": "stacks.stackbasics",
