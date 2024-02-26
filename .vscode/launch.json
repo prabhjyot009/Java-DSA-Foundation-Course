@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Brackets",
+      "request": "launch",
+      "mainClass": "stacks.Leetcode.Brackets",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "StackLinkedList",
       "request": "launch",
       "mainClass": "stacks.StackLinkedList",
