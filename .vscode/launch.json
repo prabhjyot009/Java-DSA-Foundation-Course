@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StackLinkedList",
+      "request": "launch",
+      "mainClass": "stacks.StackLinkedList",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "StackArray",
       "request": "launch",
       "mainClass": "stacks.StackArray",
