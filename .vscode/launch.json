@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "anagram",
+      "request": "launch",
+      "mainClass": "anagram",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "Power",
+      "request": "launch",
+      "mainClass": "Power",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "digitsum",
+      "request": "launch",
+      "mainClass": "Strings.digitsum",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "Brackets",
       "request": "launch",
       "mainClass": "stacks.Leetcode.Brackets",
