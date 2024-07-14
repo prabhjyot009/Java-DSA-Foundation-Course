@@ -11,8 +11,8 @@ public class anagram {
     }
 
     public static void main(String[] args) {
-        String str1 = "Listen";
-        String str2 = "Silent";
+        String str1 = "ListenA";
+        String str2 = "Silenta";
         boolean result = areAnagrams(str1, str2);
         if (result) {
             System.out.println("Are Anagram");
