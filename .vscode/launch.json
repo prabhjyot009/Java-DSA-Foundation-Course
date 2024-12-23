@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SecondLargestElement",
+      "request": "launch",
+      "mainClass": "GeekForGeeks.SecondLargestElement",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "implementationLL",
+      "request": "launch",
+      "mainClass": "LinkedList.implementationLL",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "SmallestPositiveGivenNumber",
+      "request": "launch",
+      "mainClass": "GeekForGeeks.SmallestPositiveGivenNumber",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "anagram",
       "request": "launch",
       "mainClass": "anagram",
