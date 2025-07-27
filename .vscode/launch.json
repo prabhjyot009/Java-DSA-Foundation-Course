@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "WaveArray",
+      "request": "launch",
+      "mainClass": "GeekForGeeks.WaveArray",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
+      "name": "Duplicates",
+      "request": "launch",
+      "mainClass": "Arrays.Duplicates",
+      "projectName": "Java-DSA-Foundation-Course_637ce229"
+    },
+    {
+      "type": "java",
       "name": "SecondLargestElement",
       "request": "launch",
       "mainClass": "GeekForGeeks.SecondLargestElement",
